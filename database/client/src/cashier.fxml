@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="365.0" prefWidth="584.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+      <ImageView fitHeight="365.0" fitWidth="584.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@背景2.jpg" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="0.71" />
+         </effect>
+      </ImageView>
+        <Label fx:id="label_30" layoutX="97.0" layoutY="65.0" text="收款员">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Button fx:id="btn_300" layoutX="97.0" layoutY="143.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="109.0" text="缴费" />
+        <Button fx:id="btn_301" layoutX="97.0" layoutY="212.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="109.0" text="扣费" />
+        <Button fx:id="btn_302" layoutX="97.0" layoutY="278.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="109.0" text="返回" />
+        <ImageView fitHeight="217.0" fitWidth="258.0" layoutX="277.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@电信.jpg" />
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>

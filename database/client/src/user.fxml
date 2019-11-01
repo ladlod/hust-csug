@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.media.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="365.0" prefWidth="584.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <ImageView fitHeight="365.0" fitWidth="584.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@背景2.jpg" />
+            </image>
+            <effect>
+                <ColorAdjust brightness="0.71" />
+            </effect>
+        </ImageView>
+        <Label layoutX="44.0" layoutY="54.0" text="您好，您的信息如下：">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Label>
+        <Button fx:id="btn_101" layoutX="409.0" layoutY="294.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="89.0" text="返回" />
+        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="351.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@电信.jpg" />
+            </image>
+        </ImageView>
+        <Label layoutX="44.0" layoutY="108.0" text="姓名：">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="44.0" layoutY="136.0" text="套餐：">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="44.0" layoutY="164.0" text="余额：">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="44.0" layoutY="192.0" text="状态：">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="44.0" layoutY="220.0" text="您的客服编号：">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="197.0" layoutY="296.0" text="欢迎您的查询！" textFill="#b20606">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Label>
+      <Label fx:id="label_10" layoutX="114.0" layoutY="108.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="label_11" layoutX="114.0" layoutY="136.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="label_12" layoutX="114.0" layoutY="164.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="label_13" layoutX="114.0" layoutY="192.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="label_14" layoutX="184.0" layoutY="220.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_100" layoutX="409.0" layoutY="248.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="89.0" text="修改密码" />
+    </children>
+</AnchorPane>

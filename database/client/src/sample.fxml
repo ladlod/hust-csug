@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="365.0" prefWidth="584.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="424.0" fitWidth="584.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@背景1.jpg" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="0.5" />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="206.0" layoutX="59.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@电信.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="btn_0" layoutX="372.0" layoutY="59.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="95.0" text="管理员登录" />
+      <Button fx:id="btn_1" layoutX="372.0" layoutY="122.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="95.0" text="用户登录" />
+      <Button fx:id="btn_2" layoutX="372.0" layoutY="188.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="95.0" text="客服登录" />
+      <Button fx:id="btn_3" layoutX="372.0" layoutY="251.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="95.0" text="收款员登录" />
+      <Label layoutX="73.0" layoutY="213.0" text="电信收费管理系统">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="124.0" layoutY="251.0" text="2019.5.21" />
+      <Label layoutX="118.0" layoutY="276.0" text="版本号：1.0" />
+   </children>
+</AnchorPane>

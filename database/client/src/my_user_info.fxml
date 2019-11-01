@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="365.0" prefWidth="584.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="365.0" fitWidth="584.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@背景2.jpg" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="0.71" />
+         </effect>
+      </ImageView>
+      <Button fx:id="btn_3000" layoutX="493.0" layoutY="322.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="77.0" text="返回" />
+      <VBox prefHeight="313.0" prefWidth="584.0">
+         <children>
+            <TableView fx:id="table1" prefHeight="320.0" prefWidth="584.0">
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy></TableView>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="207.0" prefWidth="443.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Button fx:id="btn_0" layoutX="301.0" layoutY="155.0" mnemonicParsing="false" text="修改" />
+        <Button fx:id="btn_1" layoutX="367.0" layoutY="155.0" mnemonicParsing="false" text="返回" />
+        <TextField fx:id="id" layoutX="169.0" layoutY="63.0" />
+        <TextField fx:id="meal" layoutX="169.0" layoutY="104.0" />
+        <Label layoutX="63.0" layoutY="64.0" text="用户id：">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="32.0" layoutY="105.0" text="修改套餐金额：">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="323.0" layoutY="105.0" text="（元）">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label fx:id="label" layoutX="194.0" layoutY="24.0">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

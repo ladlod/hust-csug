@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="417.0" prefWidth="464.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Button fx:id="btn_0" layoutX="336.0" layoutY="366.0" mnemonicParsing="false" text="开户" />
+        <Button fx:id="btn_1" layoutX="394.0" layoutY="366.0" mnemonicParsing="false" text="返回" />
+        <TextField fx:id="uid" layoutX="196.0" layoutY="96.0" />
+        <TextField fx:id="meal" layoutX="196.0" layoutY="190.0" />
+        <Label layoutX="90.0" layoutY="97.0" text="用户id：">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="59.0" layoutY="191.0" text="选择套餐金额：">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="350.0" layoutY="191.0" text="（元）">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label fx:id="label" layoutX="190.0" layoutY="57.0">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+      <Label layoutX="25.0" layoutY="22.0" text="欢迎使用中国电信！" textFill="RED">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="uname" layoutX="196.0" layoutY="142.0" />
+      <TextField fx:id="money" layoutX="196.0" layoutY="234.0" />
+      <PasswordField fx:id="upw" layoutX="196.0" layoutY="281.0" />
+      <PasswordField fx:id="upw_2" layoutX="196.0" layoutY="322.0" />
+      <Label layoutX="107.0" layoutY="143.0" text="姓名：">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="91.0" layoutY="235.0" text="存储金额：">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="69.0" layoutY="282.0" text="请输入密码：">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="323.0" text="请再次输入密码：">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

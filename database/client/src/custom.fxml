@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="365.0" prefWidth="584.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <ImageView fitHeight="365.0" fitWidth="584.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@背景2.jpg" />
+            </image>
+            <effect>
+                <ColorAdjust brightness="0.71" />
+            </effect>
+        </ImageView>
+        <Label fx:id="label_20" layoutX="67.0" layoutY="61.0" text="客服代表">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Button fx:id="btn_200" layoutX="67.0" layoutY="142.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="109.0" text="开户" />
+        <Button fx:id="btn_201" layoutX="67.0" layoutY="213.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="109.0" text="销户" />
+        <Button fx:id="btn_202" layoutX="246.0" layoutY="142.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="109.0" text="修改用户套餐" />
+        <Button fx:id="btn_203" layoutX="246.0" layoutY="213.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="109.0" text="我的用户" />
+        <Button fx:id="btn_204" layoutX="246.0" layoutY="275.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="109.0" text="返回" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="370.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@电信.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="label_200" layoutX="267.0" layoutY="183.0" textFill="RED">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
