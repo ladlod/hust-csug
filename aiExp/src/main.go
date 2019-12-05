@@ -3,8 +3,10 @@ package main
 import (
 	"container/list"
 	"fmt"
-	"tlib/stack"
+	"tlib/stack" //stack包在/tack目录下，需自行修改相对路径导入
 )
+
+var o1, o2 int = 0, 0
 
 type hanota struct {
 	n    int             //汉诺塔初始盘子数
@@ -82,14 +84,20 @@ func (han *hanota) printHanoi() { //输出汉诺塔情况
 	层级计数器为1的时候直接将1号盘子移至目标位置，解题成功
 */
 func (han *hanota) resolve(hanoiStack *stack.Stack) bool {
-	han.printHanoi()
+	o2++
+	/*han.printHanoi()
+	fmt.Println()
+	*/
 	dish, goal := han.dishToMove()
 	if han.n == han.done+1 {
-		han.s[2].Push(han.s[dish].Pop().Value)
+		dishNum := han.s[dish].Pop().Value.(int)
+		han.s[2].Push(dishNum)
+		fmt.Printf("Move dish %d from %d to %d.\n", dishNum, dish+1, 3)
 		return true
 	}
-	fmt.Println(dish, goal)
+	/*fmt.Println(dish, goal)
 	fmt.Println()
+	*/
 	if dish == -1 {
 		return false
 	}
@@ -99,12 +107,14 @@ func (han *hanota) resolve(hanoiStack *stack.Stack) bool {
 			han.done++
 		}
 		han.s[j].Push(dishNum)
+		fmt.Printf("Move dish %d from %d to %d.\n", dishNum, dish+1, j+1)
 		tmp := han.pre
 		han.pre = j
 		hanoiStack.Push(han)
 		if han.resolve(hanoiStack) {
 			return true
 		}
+		fmt.Println("remount")
 		hanoiStack.Pop()
 		han.pre = tmp
 		han.s[dish].Push(han.s[j].Pop().Value)
@@ -115,6 +125,7 @@ func (han *hanota) resolve(hanoiStack *stack.Stack) bool {
 
 //递归解法
 func (han *hanota) moveDish(level, from, inter, to int) {
+	o1++
 	if level == 1 {
 		han.s[to-1].Push(han.s[from-1].Pop().Value)
 		fmt.Printf("Move dish %d from %d to %d.\n", level, from, to)
@@ -130,14 +141,14 @@ func main() {
 	var n int
 	fmt.Scanln(&n)
 
-	/*h1 := newHanoi(n)
+	h1 := newHanoi(n)
 	h1.moveDish(n, 1, 2, 3)
-	h1.printHanoi() //递归求解汉诺塔问题
-	*/
+	h1.printHanoi() //递归求解汉诺塔问题结果
 
 	hanoiStack := stack.NewStack()
 	h2 := newHanoi(n)
 	hanoiStack.Push(h2)
 	fmt.Println(h2.resolve(hanoiStack))
-	h2.printHanoi() //产生式解法求解汉诺塔问题
+	h2.printHanoi()     //产生式解法求解汉诺塔问题结果
+	fmt.Println(o1, o2) //对比两种解法的结果
 }
