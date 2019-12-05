@@ -3,7 +3,7 @@ package main
 import (
 	"container/list"
 	"fmt"
-	"tlib/stack" //stack包在/tack目录下，需自行修改相对路径导入
+	"tlib/stack" //stack包在/stack目录下，需自行修改相对路径导入
 )
 
 var o1, o2 int = 0, 0
