@@ -141,7 +141,7 @@ func main() {
 
 	h1 := newHanoi(n)
 	h1.moveDish(n, 1, 2, 3)
-	h1.printHanoi() //递归求解汉诺塔问题结果
+	h1.printHanoi() //递归求解汉诺塔问题结
 
 	hanoiStack := stack.NewStack()
 	h2 := newHanoi(n)
