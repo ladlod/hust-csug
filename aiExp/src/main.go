@@ -9,10 +9,8 @@ import (
 var o1, o2 int = 0, 0
 
 type hanota struct {
-	n    int             //汉诺塔初始盘子数
-	s    [3]*stack.Stack //用栈来存储汉诺塔每个柱子的情况
-	pre  int             //前一次移动的盘子的位置，初始值为0
-	done int             //记录汉诺塔已经成功移动的盘子数
+	n, pre, done int             //n汉诺塔初始盘子数,pre前一次移动的盘子的位置，初始值为0,done记录汉诺塔已经成功移动的盘子数
+	s            [3]*stack.Stack //用栈来存储汉诺塔每个柱子的情况
 }
 
 func newHanoi(n int) *hanota { //创建一个汉诺塔盘
@@ -24,7 +22,7 @@ func newHanoi(n int) *hanota { //创建一个汉诺塔盘
 	}
 	s[1] = stack.NewStack()
 	s[2] = stack.NewStack()
-	return &hanota{n, s, -1, 0}
+	return &hanota{n, -1, 0, s}
 }
 
 func (han *hanota) dishToMove() (int, []int) { //求出汉诺塔中下一个需要移动的盘子编号,以及移动的目标个数
